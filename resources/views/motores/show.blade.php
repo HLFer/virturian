@@ -1,23 +1,49 @@
 @extends('layouts.app')
-
+<div class="imagem-fundo-detalhe"></div>
 @section('content')
-            <div align="center">
-            <h1>Exibindo o motor: {{ $motores->modelo }}</h1>
-            <h1>Numero de Identificação: {{ $motores->id }}</h1>
+
+
+<div class="container">
+<div class="card">
+                
+    <div id="top-card" class="card-header" align="center">Painel de Controle | Gestão de Motores</div><br>                 
+    <div align="center"><h1>Detalhes do Motor  {{ $motores->id }}</h1></div>
+    
+    <div id="corpo-detalhes" class="jumbotron text-center">
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th>Cod. Identificação</th>
+                <th>Nome / Modelo</th>
+                <th>Numero de Polos</th>
+                <th>Tensão de rede(V)</th>
+                <th>Regime de Serviço</th>
+                <th>Corrente Nominal(A)</th>
+                <th>Potência Nominal(W)</th>
+                <th>Torque Máximo(Nm)</th>
+            </tr>
+        </thead>
+   
+        <tbody align="center">    
+            <tr>              
+                <td>{{ $motores->id }}</td>
+                <td>{{ $motores->modelo }}</td>
+                <td>{{ $motores->numero_de_polos }}</td>
+                <td>{{ $motores->tensao_de_rede_v }}</td>
+                <td>{{ $motores->regime_de_servico }}</td>
+                <td>{{ $motores->corrente_nominal_a }}</td>
+                <td>{{ $motores->potencia_nominal_w }}</td>
+                <td>{{ $motores->torque_maximo_nm }}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div align="center"> <a class="btn btn-warning" href="/motores"> Voltar </a> </div><br>
+
 </div>
-    <div class="jumbotron text-center">
-        <p>
-            <strong>Identificação do Motor:</strong> {{ $motores->id }}<br>
-            <strong>Modelo do Motor:</strong> {{ $motores->modelo }}<br>
-            <strong>Numero de Polos:</strong> {{ $motores->numero_de_polos }}<br>
-            <strong>Tensão de rede(V):</strong> {{ $motores->tensao_de_rede_v }}<br>
-            <strong>Regime de Serviço:</strong> {{ $motores->regime_de_servico }}<br>
-            <strong>Corrente Nominal(A):</strong> {{ $motores->corrente_nominal_a }}<br>
-            <strong>Potência Nominal(W):</strong> {{ $motores->potencia_nominal_w }}<br>
-            <strong>Torque Máximo(Nm):</strong> {{ $motores->torque_maximo_nm }}<br>
-        </p>
-    </div>
-    <div align="center">
-    <a class="btn btn-warning" href="/motores">Voltar</a>
-    </div>
+</div>
+
+
 @endsection
+

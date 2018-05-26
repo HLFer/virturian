@@ -1,10 +1,10 @@
 
 @extends('layouts.app')
-
+<div class="imagem-fundo-criar"></div>
 @section('content')
+
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
+
             <div class="card">
                 <div id="top-card" class="card-header" align="center">Painel de Controle | Gestão de Motores</div>
 <h1>Cadastrar novo motor</h1>
@@ -52,6 +52,5 @@
 
    </div> 
    </div> 
-   </div> 
-   </div> 
+ 
 @endsection

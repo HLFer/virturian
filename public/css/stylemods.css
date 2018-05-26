@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
+
+#imagem-fundo>div.container{
+    padding-top:10rem;
+    background:#fff url('/fundo.jpg') top no-repeat;
+    width:60rem;
+    height:40rem;
+    position:relative;
+    border: 2px solid #14223d;
+    border-radius: .5rem;
+    }
+    
+    div#top-card.card-header{
+        background-color: #14223d;
+        color:#fff;
+    }
+
+    #botao-cadastrar{
+        padding-top:2rem;
+        padding-bottom:2rem;
+        background: #3698db;
+        text-align:center;
+    }
+
+    .imagem-fundo-home{
+        margin: 0;
+        padding:0;
+        background:#fff url('/fundo_home.jpg') top repeat;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: fixed; 
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+    .imagem-fundo-detalhe{
+        margin: 0;
+        padding:0;
+        background:#fff url('/fundo_detalhe.jpg') center repeat;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: fixed; 
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        -o-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px);
+    }
+    .imagem-fundo-criar{
+
+        background:#fff url('/fundo_criar.jpg') center repeat;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: fixed; 
+        -webkit-filter: blur(6px);
+        -moz-filter: blur(6px);
+        -o-filter: blur(6px);
+        -ms-filter: blur(6px);
+        filter: blur(6px);
+    }
+    .imagem-fundo-editar{
+
+        background:#fff url('/fundo_editar.png') center repeat;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: fixed; 
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+
+
+/*Início Estilo da tabela*/
+
+    h2#titulo-tabela{
+        padding-top:2rem;
+        padding-bottom:1rem;
+    }
+    
+  /* Table Base */
+  .table td, .table th {
+      padding: 0.8rem;
+      vertical-align: middle;
+      text-align: center;
+      border-top:none;
+
+    
+   }
+  .table{
+    border-radius:0.8rem;
+    
+  }
+
+/*Fim estilo da Tabela*/
+
+#corpo-detalhes{
+    padding-top: 3rem;
+    font-family: 'roboto';
+    background-color: #3698db;
+}
+

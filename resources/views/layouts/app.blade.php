@@ -20,12 +20,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
-    <style>
-     .table td {
-         vertical-align: middle;
-     }
-    </style>  
+    <link href="{{asset('css/stylemods.css')}}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
